@@ -1,0 +1,141 @@
+name: sylonow_vendor
+description: "A new Flutter project."
+publish_to: 'none'
+version: 2.1.2+33
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.6.1
+  
+  # Routing
+  go_router: ^13.0.1
+  
+  # Database
+  supabase_flutter: ^2.3.2
+  
+  # Firebase for notifications
+  firebase_core: ^3.6.0
+  firebase_messaging: ^15.1.3
+
+  #Onesignal - temporarily disabled for iOS build
+  #onesignal_flutter: ^5.1.2
+  
+  # Code Generation
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  
+  # Image & Video Handling
+  image_picker: ^1.0.7
+  image: ^4.1.7
+  video_compress: ^3.1.3
+  file_picker: ^8.1.2
+  
+  # Expandable FAB
+  flutter_expandable_fab: ^2.3.0
+  
+  # Form Validation
+  flutter_form_builder: ^9.4.1
+  form_builder_validators: ^10.0.1
+  
+  # OTP - replaced pinput to avoid smart_auth crashes
+  pin_code_fields: ^8.0.1
+
+  # MSG91 OTP Widget SDK
+  sendotp_flutter_sdk: ^0.0.2
+  
+  # Advanced Switch with Text
+  flutter_advanced_switch: ^3.1.0
+  
+  # Permissions and Location
+  permission_handler: ^11.3.1
+  geolocator: ^10.1.0
+  geocoding: ^3.0.0
+
+  # Map
+  google_maps_flutter: ^2.9.0
+  
+  # Connectivity
+  connectivity_plus: ^6.0.5
+  
+  # Storage
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  shared_preferences: ^2.2.2
+
+  # Environment Variables
+  flutter_dotenv: ^5.1.0
+  
+  # UI
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.2.0
+  lottie: ^3.3.1
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.2
+  flutter_local_notifications: ^18.0.1
+  google_sign_in: ^6.2.1  # More stable version that works reliably
+  sign_in_with_apple: ^6.1.3  # Apple Sign-In integration
+  crypto: ^3.0.3  # For Apple Sign-In nonce generation
+  fpdart: ^1.1.0
+  url_launcher: ^6.2.5
+  firebase_analytics: ^11.3.3
+  heroicons: ^0.11.0
+  package_info_plus: ^8.3.1
+  mobile_scanner: ^7.1.3
+  webview_flutter: ^4.4.2
+  audioplayers: ^6.5.0
+  vibration: ^3.1.3
+  flutter_ringtone_player: ^4.0.0+2
+  flutter_native_splash: ^2.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.8
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.4.0
+  flutter_launcher_icons: ^0.14.3
+
+dependency_overrides:
+  custom_lint_core: ^0.6.0
+  intl: ^0.19.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/
+    - assets/images/
+    - assets/animations/
+    - assets/svgs/
+
+# Flutter launcher icons disabled - app will use default Flutter icon
+# Custom launcher icons removed to avoid edge clipping issues
+# flutter_launcher_icons:
+#   android: false
+#   ios: false
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#FFFFFF"
+  image: "assets/images/Frame 8459 (2).png"
+  image_dark: "assets/images/Frame 8459 (2).png"
+  android_12:
+    color: "#FFFFFF"
+    color_dark: "#FFFFFF"
+    image: "assets/images/Frame_8459_android12.png"
+    image_dark: "assets/images/Frame_8459_android12.png"
+    icon_background_color: "#FFFFFF"
+  android: true
+  ios: true
+  web: false

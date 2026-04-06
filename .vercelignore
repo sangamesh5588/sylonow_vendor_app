@@ -1,0 +1,51 @@
+# Flutter build artifacts
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+.pub-cache/
+
+# Source code (only deploy web folder)
+lib/
+android/
+ios/
+linux/
+macos/
+windows/
+test/
+
+# Configuration files
+pubspec.yaml
+pubspec.lock
+*.iml
+*.ipr
+*.iws
+
+# Generated files
+**/*.g.dart
+**/*.freezed.dart
+**/*.gr.dart
+
+# Assets (keep only essentials)
+assets/
+!assets/images/app_logo_new.png
+
+# Other
+*.log
+firebase_app_id_file.json
+configure_webhook.sql
+image.png

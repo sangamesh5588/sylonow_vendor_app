@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylonow Partner - Theater Management Platform</title>
+    <meta name="description" content="Sylonow Partner Platform - Manage your theater bookings, screens, and revenue">
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom styles -->
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <div class="gradient-bg min-h-screen flex items-center">
+        <div class="container mx-auto px-4 py-20">
+            <div class="text-center">
+                <div class="mb-8">
+                    <img src="./assets/images/app_logo_new.png" alt="Sylonow Logo" class="mx-auto w-24 h-24 mb-6" onerror="this.style.display='none'">
+                    <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
+                        Sylonow Partner
+                    </h1>
+                    <p class="text-xl md:text-2xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
+                        Complete Theater Management Platform for Vendors
+                    </p>
+                </div>
+                
+                <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+                    <button onclick="downloadAPK()" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+                        📱 Download Android App
+                    </button>
+                    <a href="#features" class="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-purple-600 transition duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Platform Features</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Everything you need to manage your theater business efficiently
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Theater Management -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg border">
+                    <div class="text-4xl mb-4">🎭</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Theater Management</h3>
+                    <p class="text-gray-600">Manage multiple theaters, screens, and time slots from a single dashboard</p>
+                </div>
+
+                <!-- Booking System -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg border">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Booking System</h3>
+                    <p class="text-gray-600">Complete booking flow with screen selection, time slots, and add-ons</p>
+                </div>
+
+                <!-- Revenue Analytics -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg border">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Revenue Analytics</h3>
+                    <p class="text-gray-600">Real-time stats tracking bookings, revenue, and customer insights</p>
+                </div>
+
+                <!-- Add-ons Management -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg border">
+                    <div class="text-4xl mb-4">🎂</div>
+                    <h3 class="text-xl font-semibent text-gray-800 mb-3">Add-ons & Services</h3>
+                    <p class="text-gray-600">Cakes, decorations, special services to boost revenue</p>
+                </div>
+
+                <!-- Customer Management -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg border">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Customer Management</h3>
+                    <p class="text-gray-600">Track customer preferences and booking history</p>
+                </div>
+
+                <!-- Notifications -->
+                <div class="feature-card bg-white p-6 rounded-lg shadow-lg border">
+                    <div class="text-4xl mb-4">🔔</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Smart Notifications</h3>
+                    <p class="text-gray-600">OneSignal + Firebase integration for booking alerts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Built with Modern Technology</h2>
+                <p class="text-xl text-gray-600">Flutter + Supabase + Firebase for reliable performance</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">📱</div>
+                    <h3 class="font-semibold">Flutter</h3>
+                    <p class="text-sm text-gray-600">Cross-platform UI</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🗄️</div>
+                    <h3 class="font-semibold">Supabase</h3>
+                    <p class="text-sm text-gray-600">Real-time database</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">🔥</div>
+                    <h3 class="font-semibold">Firebase</h3>
+                    <p class="text-sm text-gray-600">Analytics & Auth</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-3xl mb-2">📧</div>
+                    <h3 class="font-semibold">OneSignal</h3>
+                    <p class="text-sm text-gray-600">Push notifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Schema -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Complete Database Schema</h2>
+                <p class="text-xl text-gray-600">Comprehensive data model for theater operations</p>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-lg">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded border">
+                        <h4 class="font-semibold text-purple-600">🏢 Theaters</h4>
+                        <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                            <li>• private_theaters</li>
+                            <li>• theater_screens</li>
+                            <li>• theater_time_slots</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded border">
+                        <h4 class="font-semibold text-blue-600">📋 Bookings</h4>
+                        <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                            <li>• private_theater_bookings</li>
+                            <li>• booking_addons</li>
+                            <li>• theater_booking_stats</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded border">
+                        <h4 class="font-semibold text-green-600">🛒 Add-ons</h4>
+                        <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                            <li>• add_ons (cakes, services)</li>
+                            <li>• service_add_ons</li>
+                            <li>• pricing & categories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Ready to Get Started?</h2>
+            <p class="text-xl text-white opacity-90 mb-8">Join the theater management revolution today</p>
+            <button onclick="downloadAPK()" class="bg-white text-purple-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+                📱 Download Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold">Sylonow Partner Platform</h3>
+                <p class="text-gray-400">Theater Management Made Simple</p>
+            </div>
+            <div class="text-gray-400 text-sm">
+                <p>&copy; 2025 Sylonow. All rights reserved.</p>
+                <p class="mt-2">Built with Flutter • Powered by Supabase</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function downloadAPK() {
+            // In a real deployment, you would host the APK file
+            alert('Android APK will be available for download soon!\\n\\nFor now, you can build the app using:\\nflutter build apk --release');
+            
+            // Example: Redirect to APK download
+            // window.location.href = './releases/sylonow-vendor-v1.0.1.apk';
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="sylonow_vendor">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>sylonow_vendor</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
